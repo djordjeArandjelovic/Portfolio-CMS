@@ -1,3 +1,4 @@
+import { Badge, Box, HStack, VStack } from "@chakra-ui/layout";
 import React from "react";
 import { useFetch } from "../fetchProjects";
 
@@ -11,7 +12,7 @@ const Projects = () => {
 			</section>
 		);
 	}
-
+	console.log(projects);
 	return (
 		<section className="projects">
 			<div className="title">
@@ -20,7 +21,7 @@ const Projects = () => {
 			</div>
 			<div className="projects-center">
 				{projects.map((project) => {
-					const { id, img, url, title } = project;
+					const { id, img, url, title, stack } = project;
 					return (
 						<a
 							key={id}
@@ -30,7 +31,18 @@ const Projects = () => {
 							className="project"
 						>
 							<img src={img} alt={title} className="img" />
-							<h5>{title}</h5>
+							<VStack>
+								<h5>{title}</h5>
+								<Box>
+									<HStack mb={2}>
+										{stack?.map((item, index) => (
+											<Badge variant="solid" colorScheme="yellow" key={index}>
+												{item}
+											</Badge>
+										))}
+									</HStack>
+								</Box>
+							</VStack>
 						</a>
 					);
 				})}

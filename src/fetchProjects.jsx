@@ -15,10 +15,10 @@ export const useFetch = () => {
 		try {
 			const res = await client.getEntries();
 			const projects = res?.items?.map((item) => {
-				const { title, url, image } = item?.fields;
+				const { title, url, image, stack } = item?.fields;
 				const id = item?.sys?.id;
 				const img = image?.fields?.file?.url;
-				return { title, url, id, img };
+				return { title, url, id, img, stack };
 			});
 			setProjects(projects);
 			setLoading(false);
