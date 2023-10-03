@@ -65,7 +65,7 @@ const Home = ({ bottomRef }) => {
 					<Heading className="position" as={"h3"} fontSize={"md"}>
 						Frontend Developer
 					</Heading>
-					<Text className="heroText">
+					<Text color={"#fff"} className="heroText">
 						I am a web developer, working on building (and occasinally
 						designing) webs aplications. Currently my main focus is React and
 						building web softwares. At the moment I am working as a Product
@@ -94,12 +94,17 @@ const Home = ({ bottomRef }) => {
 					</Flex>
 					<Flex gap={5} className="contact">
 						<Link
+							color={"white"}
 							href="https://www.linkedin.com/in/djordje-arandjelovic/"
 							target="_blank"
 						>
 							<BiLogoLinkedin />
 						</Link>
-						<Link href="https://github.com/djordjeArandjelovic" target="_blank">
+						<Link
+							color={"white"}
+							href="https://github.com/djordjeArandjelovic"
+							target="_blank"
+						>
 							<FaGithub />
 						</Link>
 					</Flex>

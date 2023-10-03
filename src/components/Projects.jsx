@@ -16,7 +16,7 @@ const Projects = () => {
 	return (
 		<section className="projects">
 			<div className="title">
-				<h2>projects</h2>
+				<h2 color="#fff">projects</h2>
 				<div className="title-underline"></div>
 			</div>
 			<div className="projects-center">

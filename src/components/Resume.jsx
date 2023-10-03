@@ -27,8 +27,10 @@ const Resume = () => {
 					<main className="main">
 						<Show above="650px">
 							<p className="eyebrow">Skills & Experience</p>
-							<h1 className="page-title">My Resume</h1>
-							<p className="intro">
+							<h1 color="#fff" className="page-title">
+								My Resume
+							</h1>
+							<p color="#fff" className="intro">
 								I am a front end developer with product manager experience and
 								passion for learning new techonologies.
 							</p>
@@ -42,10 +44,12 @@ const Resume = () => {
 									<div className="job" key={job.id}>
 										<p className="year">{job.years}</p>
 										<div className="job-info">
-											<h2 className="role">{job.role}</h2>
+											<h2 color="#fff" className="role">
+												{job.role}
+											</h2>
 											<span className="company">{job.company}</span>
 										</div>
-										<p>{job.description}</p>
+										<p color="#fff">{job.description}</p>
 									</div>
 								))}
 							</div>
@@ -61,10 +65,11 @@ const Resume = () => {
 										position={"relative"}
 									>
 										<CardBody className="job">
-											<Text as={"p"} className="year">
+											<Text color={"#ffc940"} as={"p"} className="year">
 												{job?.years}
 											</Text>
 											<Heading
+												color="#fff"
 												fontSize={{
 													base: "xl",
 													md: "2xl",
@@ -89,7 +94,7 @@ const Resume = () => {
 													{job?.company}
 												</Text>
 											</Box>
-											<Text as={"p"} width="90%">
+											<Text color="#fff" as={"p"} width="90%">
 												{job?.description}
 											</Text>
 										</CardBody>
@@ -128,7 +133,9 @@ const Resume = () => {
 				</Box>
 			</Show>
 			<Show below="590px">
-				<Heading textAlign={"center"}>My Resume</Heading>
+				<Heading color="#fff" textAlign={"center"}>
+					My Resume
+				</Heading>
 				<SimpleGrid placeItems={"center"} padding={10} columns={2} spacing={10}>
 					<GridItem>
 						<Image height={"60px"} width={"60px"} src={html} />
@@ -151,9 +158,9 @@ const Resume = () => {
 						<Card width={"90%"} key={job?.id}>
 							<CardBody>
 								<Text color={"#872642"}>{job?.company}</Text>
-								<Heading>{job?.role}</Heading>
+								<Heading color="#fff">{job?.role}</Heading>
 								<Text color={"#ffc940"}>{job?.years}</Text>
-								<Text>{job?.description}</Text>
+								<Text color="#fff">{job?.description}</Text>
 							</CardBody>
 						</Card>
 					))}
