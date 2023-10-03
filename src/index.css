@@ -135,6 +135,7 @@ ul {
 
 .title {
 	text-align: center;
+	color: #fff;
 }
 
 .title-underline {
@@ -455,6 +456,7 @@ svg {
 .intro {
 	font-size: 1.375rem;
 	max-width: 40ch;
+	color: #fff;
 }
 
 .job-experience {
