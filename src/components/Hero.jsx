@@ -72,16 +72,17 @@ const Home = ({ bottomRef }) => {
 						Manager in a software development company.
 					</Text>
 					<Flex gap={10} className="btnBox">
-						<a
-							href={ResumePDF}
-							download="Djordje-Arandjelovic-CV"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<Button className="btn btn-cv" width={"10rem"}>
+						<Button className="btn btn-cv" width={"10rem"}>
+							<a
+								href={ResumePDF}
+								download="Djordje-Arandjelovic-CV"
+								target="_blank"
+								rel="noreferrer"
+							>
 								Download CV
-							</Button>
-						</a>
+							</a>
+						</Button>
+
 						<Button
 							onClick={() =>
 								bottomRef.current?.scrollIntoView({ behavior: "smooth" })

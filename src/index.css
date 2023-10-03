@@ -65,7 +65,7 @@ html {
 }
 
 #root {
-	background-color: #293241;
+	background-color: #171923;
 }
 
 h1,
@@ -449,6 +449,7 @@ svg {
 	font-size: 3.25rem;
 	text-transform: uppercase;
 	margin: 0;
+	color: #fff;
 }
 
 .intro {
@@ -517,6 +518,7 @@ svg {
 	justify-content: space-between;
 	align-items: baseline;
 	margin-bottom: 1rem;
+	color: #fff;
 }
 .job-experience .job .company {
 	text-transform: uppercase;
@@ -527,4 +529,7 @@ svg {
 .job-experience .job .role {
 	font-size: 1.4rem;
 	font-weight: 600;
+}
+.job-experience .job-description {
+	color: #fff;
 }

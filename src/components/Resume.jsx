@@ -27,16 +27,14 @@ const Resume = () => {
 					<main className="main">
 						<Show above="650px">
 							<p className="eyebrow">Skills & Experience</p>
-							<h1 color="#fff" className="page-title">
-								My Resume
-							</h1>
-							<p color="#fff" className="intro">
+							<h1 className="page-title">My Resume</h1>
+							<p className="intro">
 								I am a front end developer with product manager experience and
 								passion for learning new techonologies.
 							</p>
 						</Show>
 						<Show below="650px">
-							<Heading>My Resume</Heading>
+							<Heading mb={5}> My Resume</Heading>
 						</Show>
 						<Show above="890px">
 							<div className="job-experience">
@@ -44,12 +42,10 @@ const Resume = () => {
 									<div className="job" key={job.id}>
 										<p className="year">{job.years}</p>
 										<div className="job-info">
-											<h2 color="#fff" className="role">
-												{job.role}
-											</h2>
+											<h2 className="role">{job.role}</h2>
 											<span className="company">{job.company}</span>
 										</div>
-										<p color="#fff">{job.description}</p>
+										<p className="job-description">{job.description}</p>
 									</div>
 								))}
 							</div>
@@ -155,7 +151,7 @@ const Resume = () => {
 				</SimpleGrid>
 				<VStack>
 					{jobsData?.map((job) => (
-						<Card width={"90%"} key={job?.id}>
+						<Card background={"#293241"} width={"90%"} key={job?.id}>
 							<CardBody>
 								<Text color={"#872642"}>{job?.company}</Text>
 								<Heading color="#fff">{job?.role}</Heading>
