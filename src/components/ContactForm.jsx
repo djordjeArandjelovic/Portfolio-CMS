@@ -37,7 +37,7 @@ const Contact = ({ bottomRef }) => {
 
 		emailjs
 			.sendForm(
-				import.meta.env.VITE_EMAIL_JS_KEY,
+				"service_e1qouli",
 				"template_mrqsu1f",
 				form.current,
 				"YGqQENJFxm0MZBDjE"
