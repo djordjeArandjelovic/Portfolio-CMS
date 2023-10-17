@@ -12,7 +12,6 @@ const Projects = () => {
 			</section>
 		);
 	}
-	console.log(projects);
 	return (
 		<section className="projects">
 			<div className="title">
