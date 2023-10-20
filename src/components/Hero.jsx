@@ -1,30 +1,3 @@
-// import React from "react";
-// import heroImg from "../assets/hero.svg";
-
-// const Hero = () => {
-// 	return (
-// 		<section className="hero">
-// 			<div className="hero-center">
-// 				<div className="hero-title">
-// 					<h1>Contentful CMS</h1>
-// 					<p>
-// 						Fashion axe stumptown selfies poutine kombucha, banh mi dreamcatcher
-// 						godard leggings glossier. Mixtape tacos poke occupy art party
-// 						live-edge, leggings VHS thundercats yes plz tbh put a bird on it.
-// 						Neutra prism offal jawn tonx kogi. Pour-over af 8-bit small batch
-// 						try-hard, same pitchfork shoreditch.
-// 					</p>
-// 				</div>
-// 				<div className="img-container">
-// 					<img src={heroImg} alt="woman and the browser" className="img" />
-// 				</div>
-// 			</div>
-// 		</section>
-// 	);
-// };
-
-// export default Hero;
-
 import ResumePDF from "../Djordje_Arandjelovic.pdf";
 
 import {
@@ -72,26 +45,40 @@ const Home = ({ bottomRef }) => {
 						Manager in a software development company.
 					</Text>
 					<Flex gap={10} className="btnBox">
-						<Button className="btn btn-cv" width={"10rem"}>
-							<a
-								href={ResumePDF}
-								download="Djordje-Arandjelovic-CV"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Download CV
-							</a>
-						</Button>
-
-						<Button
-							onClick={() =>
-								bottomRef.current?.scrollIntoView({ behavior: "smooth" })
-							}
-							className="btn btn-talk"
-							width={"10rem"}
+						<Flex
+							gap={{
+								base: 0,
+								sm: 2,
+								md: 3,
+								lg: 5,
+							}}
+							direction={{
+								base: "column",
+								sm: "row",
+								md: "row",
+								lg: "row",
+							}}
 						>
-							Let's Talk
-						</Button>
+							<Button className="btn btn-cv">
+								<a
+									href={ResumePDF}
+									download="Djordje-Arandjelovic-CV"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Download CV
+								</a>
+							</Button>
+
+							<Button
+								onClick={() =>
+									bottomRef.current?.scrollIntoView({ behavior: "smooth" })
+								}
+								className="btn btn-talk"
+							>
+								Let's Talk
+							</Button>
+						</Flex>
 					</Flex>
 					<Flex gap={5} className="contact">
 						<Link
