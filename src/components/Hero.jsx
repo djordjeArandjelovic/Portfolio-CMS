@@ -9,7 +9,7 @@ import {
 	Link,
 	Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 import img from "../assets/cover4.svg";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
@@ -48,10 +48,10 @@ const Home = ({ bottomRef }) => {
 						Frontend Developer
 					</Heading>
 					<Text color={"#fff"} className="heroText">
-						I am a web developer, working on building (and occasinally
-						designing) webs aplications. Currently my main focus is React and
-						building web softwares. At the moment I am working as a Product
-						Manager in a software development company.
+						I am a web developer, working on building web aplications. At the
+						moment I am working as a frontend developer at Inbox ITS in
+						Belgrade. My passion is technology. Besides React and my job, I am
+						learning mobile iOS development using Swift and SwiftUI.
 					</Text>
 					<Flex gap={10} className="btnBox">
 						<Flex

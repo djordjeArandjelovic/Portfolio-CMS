@@ -5,6 +5,7 @@ import css from "../assets/css.svg";
 import js from "../assets/js.svg";
 import scss from "../assets/scss.svg";
 import react from "../assets/react.svg";
+import swift from "../assets/swift-svg.svg";
 import { Image } from "@chakra-ui/image";
 import {
 	Box,
@@ -120,8 +121,12 @@ const Resume = () => {
 									<img src={js} alt="" />
 								</li>
 								<li>
-									<p className="visually-hidden">javascript</p>
+									<p className="visually-hidden">react</p>
 									<img src={react} alt="" />
+								</li>
+								<li>
+									<p className="visually-hidden">swift</p>
+									<img src={swift} alt="" />
 								</li>
 							</ul>
 						</aside>
