@@ -32,7 +32,16 @@ const Home = ({ bottomRef }) => {
 						md: "50%",
 					}}
 				>
-					<Heading className="name" as={"h1"} marginBottom={5}>
+					<Heading
+						className="name"
+						as={"h1"}
+						marginBottom={5}
+						fontSize={{
+							base: 24,
+							sm: 30,
+							md: 36,
+						}}
+					>
 						Djordje Arandjelovic
 					</Heading>
 					<Heading className="position" as={"h3"} fontSize={"md"}>

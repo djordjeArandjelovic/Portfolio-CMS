@@ -1,8 +1,16 @@
 export const jobsData = [
 	{
 		id: 1,
+		role: "Frontend Developer",
+		years: "2023-",
+		company: "Inbox ITS",
+		description:
+			"Working as a part of a frontend team, using HTML, CSS, JavaScript, JQuery, JSP, XML...",
+	},
+	{
+		id: 1,
 		role: "Product Manager",
-		years: "2021-",
+		years: "2021-2023",
 		company: "Skuda Mill",
 		description:
 			"Working as a product manager, making sure all customer needs are met through the whole software life cycle, colaborating with HR to hire new developers and working closly with our marketing team.",
