@@ -10,15 +10,23 @@ export const jobsData = [
 	{
 		id: 2,
 		role: "iOS Developer",
-		years: "Jan 2024-",
+		years: "Jan 2024 - Nov 2024",
 		company: "Skuda MIll",
 		description:
 			"Developing a new SwiftUI app and integrating iOS app with web software.",
 	},
 	{
 		id: 3,
+		role: "iOS Developer",
+		years: "Oct 2024-",
+		company: "Inbox ITS",
+		description:
+			"Building iOS mobile apps using SwiftUI...",
+	},
+	{
+		id: 3,
 		role: "Frontend Developer",
-		years: "2023-",
+		years: "Oct 2023 - Oct 2024",
 		company: "Inbox ITS",
 		description:
 			"Working as a part of a frontend team, using HTML, CSS, JavaScript, JQuery, JSP, XML...",
@@ -37,14 +45,6 @@ export const jobsData = [
 		years: "2020-2023",
 		company: "Stelle Corporation",
 		description:
-			"Responsible for the management and implementation of factoring service administration in order to meet business objectives.",
-	},
-	{
-		id: 6,
-		role: "Logistics Coordinator",
-		years: "2019",
-		company: "Stelle Corporation",
-		description:
-			"Started as a logistics coordinator for a small size project that was growing, until I was managing a team of 23 people.",
-	},
+			"Management and implementation of factoring service administration in order to meet business objectives.",
+	}
 ];
