@@ -45,13 +45,13 @@ const Home = ({ bottomRef }) => {
 						Djordje Arandjelovic
 					</Heading>
 					<Heading className="position" as={"h3"} fontSize={"md"}>
-						Frontend Developer
+						iOS Developer
 					</Heading>
 					<Text color={"#fff"} className="heroText">
-						I am a web developer, working on building web aplications. At the
-						moment I am working as a frontend developer at Inbox ITS in
-						Belgrade. My passion is technology. Besides React and my job, I am
-						learning mobile iOS development using Swift and SwiftUI.
+						iOS developer with experience in both SwiftUI and UIKit. 
+						I enjoy building apps that are practical, functional, 
+						and meet the needs of users. Currently working full-time 
+						and also freelancing on various iOS projects.
 					</Text>
 					<Flex gap={10} className="btnBox">
 						<Flex
